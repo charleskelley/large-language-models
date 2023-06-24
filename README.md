@@ -19,12 +19,12 @@
 
 [Databricks LLM101x - Large Language Models: Application through Production](https://www.edx.org/course/large-language-models-application-through-production)
 
-| :---: | :--- |
+| --- | --- |
 | ![](./databricks-llm101x/databricks-llm101x.png) | This course is aimed at developers, data scientists, and engineers looking to build LLM-centric applications with the latest and most popular frameworks. By the end of this course, you will have built an end-to-end LLM workflow that is ready for production! |
 
 [Large Language Models: Foundation Models From The Ground Up](https://www.edx.org/course/large-language-models-foundation-models-from-the-ground-up)
 
-| :---: | :--- |
+| --- | --- |
 | ![](./databricks-llm201x.png) | This course dives into the details of foundation models in natural language processing (NLP). You will learn the innovations that led to the proliferation of transformer-based models, including BERT, GPT, and T5, and the key breakthroughs that led to applications such as ChatGPT. |
 
    
