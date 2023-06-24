@@ -1,8 +1,9 @@
 # Databricks - Professional Certificate</br>in large language models
 
-> **Note** 
-> This repository has all course notes and lab notebooks I used while completing the
-> profesional certificate in large language models by Databricks academy on [edX](https://www.edx.org/professional-certificate/databricks-large-language-models?index=product&queryID=7df500f9b5a730d93a39b45d143b9bb4&position=6&linked_from=autocomplete&c=autocomplete).
+> **Note** This repository has all course notes and lab notebooks I used while
+> completing the profesional certificate in large language models by Databricks
+> academy on
+> [edX](https://www.edx.org/professional-certificate/databricks-large-language-models?index=product&queryID=7df500f9b5a730d93a39b45d143b9bb4&position=6&linked_from=autocomplete&c=autocomplete).
 
 ## TL; DR: What Was Learned
 
