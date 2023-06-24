@@ -19,7 +19,7 @@
 
 [Databricks LLM101x - Large Language Models: Application through Production](https://www.edx.org/course/large-language-models-application-through-production)
 
-![](./databricks-llm101x/databricks-llm101x.png)
+[![](./databricks-llm101x/databricks-llm101x.png)](https://www.edx.org/course/large-language-models-application-through-production)
 
 This course is aimed at developers, data scientists, and engineers looking to
 build LLM-centric applications with the latest and most popular frameworks. By
