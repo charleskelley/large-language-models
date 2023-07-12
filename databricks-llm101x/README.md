@@ -7,6 +7,11 @@
 focused, as opposed to theory focused, course of the two courses in the edX
 Large Language Models Professional Certificate training.
 
+## Quick Links
+
+* [Module 1: Applications with LLMs](#module-1-applications-with-llms)
+* [Module 2: Embeddings, Vector Databases, and Search](#module-2-embeddings-vector-databases-and-search)
+
 ## Module 1: Applications with LLMs
 
 * [Module 1 Resources](https://learning.edx.org/course/course-v1:Databricks+LLM101x+2T2023/block-v1:Databricks+LLM101x+2T2023+type@sequential+block@0ff664ca2af041ffa79292147229cbd5/block-v1:Databricks+LLM101x+2T2023+type@vertical+block@ff64e77cc19c48c288d89b2428686710?_gl=1%2A1mtzra4%2A_ga%2AMTI1NTAxNzMwMS4xNjgzMzg3NzYw%2A_ga_D3KS4KMDT0%2AMTY4Njc1ODYxMS4zNi4xLjE2ODY3NTg2MjAuNTEuMC4w)
