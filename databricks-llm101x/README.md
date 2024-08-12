@@ -11,6 +11,8 @@ Large Language Models Professional Certificate training.
 
 * [Module 1: Applications with LLMs](#module-1-applications-with-llms)
 * [Module 2: Embeddings, Vector Databases, and Search](#module-2-embeddings-vector-databases-and-search)
+* [Module 3: Multi-stage Reasoning](#module-3-multi-stage-reasoning)
+* [Module 4: Fine-tuning and Evaluating LLMs](#module-4-fine-tuning-and-evaluating-llms)
 
 ## Module 1: Applications with LLMs
 
@@ -49,7 +51,7 @@ Covered in course:
 * Few-shot learning - train a model to do a new task with a few training
   examples of that task
 
-Addtional tasks that are general and overlap with other tasks:
+Additional tasks that are general and overlap with other tasks:
 
 * Conversation or chat - generating text in response to a prompt
 * (Table) question-answering - answering questions about a table
@@ -182,5 +184,179 @@ Improving retrieval.
   - Do my embeddings capture both my documents and queries?
 * Document storage strategy
   - Should I store the whole document as one, or split it up into chunks?
+
+
+## Module 3: Multi-stage Reasoning
+
+* [Module 3 Resources](https://learning.edx.org/course/course-v1:Databricks+LLM101x+2T2023/block-v1:Databricks+LLM101x+2T2023+type@sequential+block@cef7038161874c9a8ee803140944e17a/block-v1:Databricks+LLM101x+2T2023+type@vertical+block@00b1f5f3a6cc47a592c5815cf378db8e)
+
+### Prompt Engineering
+
+Crafting more elaborate prompts to get the most out of our LLM interactions.
+
+**Templating** - augments a known prompt that performs a specfic task well by
+adding additional inofrmation as an input variable and standardizing the
+output format so that the output of the LLM can be used as input to another
+process such as a second LLM.
+
+### LLM Chains
+
+Linking multiple LLM interactions to build complexity and functionality.
+
+**Multi-stage LLM chains** - for example, a sequentaial flow where an article
+summary output from a summarization LLM feeds into a sentiment LLM.
+
+### Agents
+
+Giving LLMs the ability to delegate tasks to specified tools.
+
+Agents are LLM-based systems that execute the ReasonAction loop.
+
+* Thought -> Action -> Observation -> Repeat
+
+To build an LLM we need:
+
+* Task to be solveed or assigned to agents
+* An LLM as the reasoning/decision making entity
+* A set of tools that the LLM will select and execute to perform steps to
+  achieve the task
+
+## Module 4: Fine-tuning and Evaluating LLMs
+
+* [Module 3 Resources](https://learning.edx.org/course/course-v1:Databricks+LLM101x+2T2023/block-v1:Databricks+LLM101x+2T2023+type@sequential+block@e57f7ee0973643318091f3b9f4a83911/block-v1:Databricks+LLM101x+2T2023+type@vertical+block@859b3255960844bba90a148ccb8fcac1)
+
+Typical LLM Releases include.
+
+Multiple:
+
+* Sizes - S, M, L
+* Sequence lengths (i.e. input tokens) - 512, 4,096, 62,000
+* Flavors or tuned versions - base, chat, instruct
+
+Tradeoffs between:
+
+* Accuracy
+* Speed
+* Task-specific performance
+
+### Applying Foundation LLMs
+
+Task: Summarize news articles as riddles.
+
+Potential Pipelines include routing data from the news API to:
+
+* Few-shot open source LLM
+* Open source instruction following LLM
+* Paid LLM-as-a-service
+* Build your own
+
+### Fine-tuning: Few-shot Learning
+
+**Pros**:
+
+* speed of development
+* performance
+* cost - open source
+
+**Cons**:
+
+* data - need good-quality examples with context
+* size-effect - may need to use largest model
+
+Few-shot learning would likely need a long input sequence to create a proper
+prompt as well as need the largest version of the LLM model to get adequate
+performance
+
+### Fine-tuning: Instruction-following LLMs
+
+Useful for zero-shot learning.
+
+**Pros**:
+
+* data - no examples needed
+* performance - if model fine-tuned out-of-box then should perform well
+* cost - open source
+
+**Cons**:
+
+* quality - may be low if new if task doesn't meet training data
+* size-effect - may need to use largest model
+
+### Fine-tuning: LLM-as-a-service
+
+**Pros**:
+
+* speed of development - simple API call
+* performance - vendor incentive to use large performant models
+
+**Cons**:
+
+* cost - not free
+* data security/quality - data controlled by vendor
+* vendor lock-in - dependent on vendor for model functionality
+
+### Fine-tuning: DIY
+
+Should be last case scenario as it will be very time and resource consuming.
+
+**Pros**:
+
+* task-tailoring
+* inference cost
+* control
+
+**Cons**:
+
+* time and compute cost
+* data requirements
+* skill-set dependencies
+
+Need a model trained on open dataset or not commercially restricted like Dolly
+or Dolly v2.
+
+### Evaluating LLMs
+
+* Training Loss/Validation Scores - only watched during training and not very
+  helpful for end usage
+* Perplexity - is the model surprised it got the right answer 
+  - Good language model has high accuracy and low perplexity
+  - Accuracy = next word is right or wrong
+  - Perplexity = how confident was next word choice
+
+### Task-specific Evaluations
+
+N-Gram based
+
+* Translation - BiLingual Evaluation Understudy (BLEU) 
+* Summarization - ROUGE
+
+Dataset Benchmarks
+
+* Reading comprehension - Stanford Question Answering Dataset (SQuAD)
+
+Alignment - which is used by OpenAI (helpful, honest, harmless)
+
+
+### LLM Chain Evaluation
+
+Guest lecture from Harrison Chase—creator of LangChain.
+
+* Lack of data -  generate data, or wait and test as more data available
+* Lack of metrics - visualize flow, use LLM as judge, or use user feedback
+
+ Offline evaluation:
+
+- Create dataset of test data points to run against
+- Run chain or agent against them
+- Visually inspect them
+- Use LLM to auto-grade them
+
+Online Evaluation:
+
+* Direct feedback (thumbs up/down)
+* Indirect feedback (clicked on link)
+* Track feedback over time
+
+## Module 5: Fine-tuning and Evaluating LLMs
 
 
